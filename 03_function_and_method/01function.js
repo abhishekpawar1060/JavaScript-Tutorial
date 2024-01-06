@@ -84,7 +84,7 @@ myArray.forEach(calculateSqr);
 
 
 
-// Map method -> create new Array with the result os some operation
+// Map method -> create new Array with the result of some operation
 let array = [10,21,35,50,69,80];
 
 let newArray = array.map((val)=>{
