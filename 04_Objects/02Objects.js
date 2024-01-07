@@ -54,3 +54,24 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('id'));
+
+
+//Object de-Structure
+const course = {
+    courseName : "JS",
+    price: 1000,
+    courseInstructor: "Abhi"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course;
+// console.log(courseInstructor);
+console.log(instructor);
+
+
+
+const navbar = ({company}) => {
+
+}
+navbar(company = "Abhishek")
