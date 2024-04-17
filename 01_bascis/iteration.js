@@ -26,10 +26,34 @@
 
 
 // break and continue
-for (let i = 0; i < 10; i++) {
-    if(i == 5){
-        console.log(i);
-        break
-    }
-    
-}
+// for (let i = 0; i < 10; i++) {
+//     if(i == 5){
+//         console.log(i);
+//         break
+//     }
+//     if(i == 3){
+//         continue;
+//     }
+
+//     console.log(i)
+// }
+
+
+// let index = 0;
+// while(index <= 5){
+//     console.log(index)
+//     index++
+// }
+
+// let array = [1,2,3,5,3,2,1]
+// let i = 0
+// while(i < array.length){
+//     console.log(array[i]);
+//     i++;
+// }
+
+let score = 10;
+do{
+    console.log(`Score is ${score}`)
+    score++
+}while(score <= 10);
