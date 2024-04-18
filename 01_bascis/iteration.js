@@ -52,8 +52,88 @@
 //     i++;
 // }
 
-let score = 10;
-do{
-    console.log(`Score is ${score}`)
-    score++
-}while(score <= 10);
+// let score = 10;
+// do{
+//     console.log(`Score is ${score}`)
+//     score++
+// }while(score <= 10);
+
+
+//for of loop
+// const arr = [1,2,3,4,5,6]
+// for (const it of arr) {
+//     console.log(it)
+// }
+
+// let str = "Hello world"
+// for (const it of str) {
+//     console.log(it)
+// }
+
+const map = new Map()
+map.set("IN","India")
+map.set("US","United State")
+map.set("UK", "United Kingdom")
+
+// console.log(map)
+// for(let [key, value] of map){
+//     console.log(key, ':' ,value)
+// }
+
+
+// const Myobj = {
+//     game1:'NFS',
+//     game2:'spiderman'
+// }
+// for(let key in Myobj){
+//     console.log(`${key} shortcut for  ${Myobj[key]}`)
+// }
+
+
+// const programming = ["js", "java", "go", 'cpp']
+// for (const i in programming) {
+//     console.log(programming[i])
+// }
+
+
+
+//for Each loop
+
+const coding = ["js", "rust", "java", "go"]
+
+// coding.forEach( function (val) {
+//     console.log(val)
+// })
+
+// coding.forEach(element => {
+//     console.log(element)
+// });
+
+
+// function printMe(item){
+//     console.log(item)
+// }
+// coding.forEach(printMe)
+
+// coding.forEach( (item, index, arr) => { 
+//     console.log(item, index, arr)
+// })
+
+const myCoding = [
+    {
+        langName:'javascript',
+        langFileName:'js'
+    },
+    {
+        langName:'java',
+        langFileName:'java'
+    },
+    {
+        langName:'python',
+        langFileName:'py'
+    },
+]
+
+myCoding.forEach( (item) => {
+    console.log(item.langName)
+})
