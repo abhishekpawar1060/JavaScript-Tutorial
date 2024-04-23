@@ -3,12 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Dom Learning</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+
+
+
 </head>
 <body>
-    <div class="bg-black">
-        <h1 class="heading">Dom learning on Code</h1>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
+    <div id="id" class="parent">
+       <div class="day">Monday</div>
+       <div class="day">Tuesday</div>
+       <div class="day">Wednesday</div>
+       <div class="day">Thursday</div>
     </div>
     
 </body>
+
+<script>
+       const parent = document.querySelector('.parent')
+    //    console.log(parent)
+    //    console.log(parent.children[0].innerHTML)
+
+    //    for (let i = 0; i < parent.children.length; i++) {
+    //         console.log(parent.children[i].innerHTML)
+    //    }
+
+       parent.children[1].style.color = 'red'
+    //    console.log(parent.firstElementChild)
+    //    console.log(parent.lastElementChild)
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne)
+    // console.log(dayOne.parentElement)
+    // console.log(dayOne.nextElementSibling)
+
+
+    console.log("NODES: ",parent.childNodes)
+</script>
+
 </html>
