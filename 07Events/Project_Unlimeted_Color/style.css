@@ -1,0 +1,24 @@
+body{
+    background-color: gray;
+
+}
+
+h2{
+    text-align: center;
+}
+
+#start{
+    margin: 50px;
+    display: inline-block;
+    background-color: greenyellow;
+    font-size: 20px;
+
+}
+
+#stop{
+    margin: 50px;
+    display: inline-block;
+    background-color: red;
+    font-size: 20px;
+
+}
