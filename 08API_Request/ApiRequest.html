@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <button id="profile">Visit GitHub Account</button>
+</head>
+<body>
+    
+</body>
+
+<script>
+    const reqURL = 'https://api.github.com/users/abhishekpawar1060'
+    const xhr = new XMLHttpRequest();
+    let data;
+
+    xhr.open('GET',reqURL);
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            data = JSON.parse(this.responseText)
+            console.log(data)
+            console.log(data.followers)
+        }
+    }
+    xhr.send()
+
+
+    const button = document.querySelector('#profile');
+    button.addEventListener('click',function(){
+        location.assign(data.html_url)
+    },false)
+
+</script>
+</html>
