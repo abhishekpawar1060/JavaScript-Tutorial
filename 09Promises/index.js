@@ -1,7 +1,6 @@
 const promisOne = new Promise(function(resolve, reject){
     //Do an async task
     //DB calls, cryptograph, newtork
-
     setTimeout(function(){
         console.log("Async task is complete");
         resolve()
